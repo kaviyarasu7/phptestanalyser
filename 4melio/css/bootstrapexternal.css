@@ -1,0 +1,44 @@
+.header
+{
+	color:#0000ff; background-color: #ccc; padding: 0.5em;
+}
+.text
+{
+	text-align: center;
+}
+.inner
+{
+	color:#000000; text-align: left; background-color: #ff8080;
+}
+.total
+{
+	background-color:#b8b894;padding: 2em;
+}
+.find
+{
+	background-color:#b3cccc;padding: 2em;
+}
+.top
+{
+	background-color:#aaa;padding: 2em;
+}
+.donut
+{
+	background-color: #ffe6b3; padding: 5em;
+}
+.pie
+{
+	background-color:#ff99dd; padding: 5em;
+}
+.bar
+{
+	background-color:#80aaff;padding: 5em;
+}
+.footer
+{
+	color:#0000ff; text-align: center; background-color: #aaa; padding: 0.5em;
+}
+.count
+{
+	font-size: 250%;
+}

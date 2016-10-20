@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Text Analyzer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/c3.css">
+        <link rel="stylesheet" type="text/css" href="css/bs.css">
+        <link rel="stylesheet" type="text/css" href="css/external.css">
+        <script type="text/javascript" src="js/angular_include.js"></script>
+        <script type="text/javascript" src="js/d3.js"></script>
+        <script type="text/javascript" src="js/c3.js"></script>
+        <script type="text/javascript" src="js/bs1.js"></script>
+        <script type="text/javascript" src="js/bs2.js"></script>
+        <script type="text/javascript" src="js/angular_query.js"></script>
+    </head>
+
+	<body ng-app="myApp" ng-controller="formCtrl">
+	<div class="container-fluid">
+		
+			<h1 class="title">Welcome to TextAnalyze App</h1> 
+			<center><img src="images/text4.jpeg" width="500" height="150"></center></br>
+			<center>
+				<table border="0">
+					<tr>
+						<td><b>Find Words:<b></td>
+						<td><textarea rows="2" cols="70" ng-model="words"></textarea></td>
+					</tr>
+					<tr>
+						<td><b>Story/Passage:<b></td>
+						<td><textarea rows="5" cols="70" ng-model="story"></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><center><button  ng-click="myFunction()">Submit</button></center></td>
+					</tr>
+				</table>
+			</center>
+			
+			
+				<div class="row">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 header"><h3 class="text">PHP TEXT ANALYSER</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="inner col-md-12 col-xs-12 col-sm-12 col-lg-12">
+						<h4><b>Find Words:</b></h4>
+						<h3>{{ response1 }}</h3>
+						<h4><b>Story/Passage:</b></h4>
+						<h3>{{ response2 }}</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="total col-md-4 col-xs-4 col-sm-4 col-lg-4 ">
+						<center><b class="count">{{ response4 }}</b></center></br>
+						<center><b>Total Words</b></center>
+					</div>
+					<div class="find col-md-4 col-xs-4 col-sm-4 col-lg-4 ">
+						<center><b class="count">{{ response3 }}</b></center></br> 
+						<center><b>Find Words</b></center>   
+					</div>
+					<div class="top col-md-4 col-xs-4 col-sm-4 col-lg-4 ">
+						<center><b class="count">{{ response5 }}</b></center></br>
+						<center><b>Top Word</b></center>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="donut col-md-4 col-xs-4 col-sm-4 col-lg-4 ">
+						<div id="chart1"></div>
+						
+					</div>
+					<div class="pie col-md-4 col-xs-4 col-sm-4 col-lg-4 ">
+						<div id="chart2"></div>
+
+					</div>
+					<div class="bar col-md-4 col-xs-4 col-sm-4 col-lg-4 ">
+						<div id="chart3"></div>
+
+					</div>
+				</div>
+				</div>
+
+				<div class="row">
+					<div class="footer col-md-12 col-xs-12 col-sm-12 col-lg-12 "><h4>www.meliosystems.com</h4></div>
+				</div>
+			</div>
+		
+	</body>
+</html>	
+
